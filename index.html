@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>tb2k by solus-impar</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>tb2k</h1>
+        <p>A python3 slack topic bot.</p>
+
+        <p class="view"><a href="https://github.com/solus-impar/tb2k">View the Project on GitHub <small>solus-impar/tb2k</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/solus-impar/tb2k/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/solus-impar/tb2k/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/solus-impar/tb2k">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>pip install git+https://github.com/solus-impar/tb2k.git@master
+</code></pre>
+
+<p>If you are not in a <a href="https://virtualenv.pypa.io/en/stable/">virtualenv</a> you may need to use <code>pip</code> with <code>sudo</code>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Once <code>tb2k</code> is installed you can run it from the command line. Keep in mind
+that <code>tb2k</code> depends on the following environment variables:</p>
+
+<ul>
+<li>
+<code>TB2K_TOKEN</code>: A custom bot Slack token.</li>
+<li>
+<code>TB2K_CHANNEL</code>: The name of the channel to change topics for.</li>
+</ul>
+
+<h2>
+<a id="schedule" class="anchor" href="#schedule" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Schedule</h2>
+
+<p>If you want <code>tb2k</code> to run regularly you can add it to your <code>crontab</code> with</p>
+
+<pre><code>crontab -e
+0 6 * * * \path\to\python3 \path\to\tb2k.py
+</code></pre>
+
+<p>Every day at 06:00, <code>tb2k</code> will update the channel's topic
+to one of thse pages.</p>
+
+<ul>
+<li>Monday, Tuesday, &amp; Wednesday: Random man-page</li>
+<li>Thursday &amp; Friday: Random programming language</li>
+<li>Saturday &amp; Sunday: Top HN story</li>
+</ul>
+
+<p>Slack API: <a href="https://api.slack.com/">api.slack.com</a></p>
+
+<p>You should also check out <a href="https://www.github.com/reillysiemens/wb2k/">wb2k</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/solus-impar">solus-impar</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

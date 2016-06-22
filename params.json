@@ -1,0 +1,6 @@
+{
+  "name": "tb2k",
+  "tagline": "A python3 slack topic bot.",
+  "body": "## Installation\r\n\r\n```\r\npip install git+https://github.com/solus-impar/tb2k.git@master\r\n```\r\n\r\nIf you are not in a [virtualenv] you may need to use `pip` with `sudo`.\r\n\r\n## Usage\r\nOnce `tb2k` is installed you can run it from the command line. Keep in mind\r\nthat `tb2k` depends on the following environment variables:\r\n- `TB2K_TOKEN`: A custom bot Slack token.\r\n- `TB2K_CHANNEL`: The name of the channel to change topics for.\r\n\r\n## Schedule\r\nIf you want `tb2k` to run regularly you can add it to your `crontab` with\r\n```\r\ncrontab -e\r\n0 6 * * * \\path\\to\\python3 \\path\\to\\tb2k.py\r\n```\r\n\r\nEvery day at 06:00, `tb2k` will update the channel's topic\r\nto one of thse pages.\r\n* Monday, Tuesday, & Wednesday: Random man-page\r\n* Thursday & Friday: Random programming language\r\n* Saturday & Sunday: Top HN story\r\n\r\nSlack API: [api.slack.com](https://api.slack.com/)\r\n\r\nYou should also check out [wb2k].\r\n\r\n[wb2k]: https://www.github.com/reillysiemens/wb2k/\r\n[virtualenv]: https://virtualenv.pypa.io/en/stable/\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
